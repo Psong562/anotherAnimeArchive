@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="reset.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+  <link href="metro-icons.css" rel="stylesheet">
+  <link href="./css/login.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+  <title>Login</title>
+</head>
+
+<body>
+
+
+  <ul class="h-menu bg-black fg-white">
+    <li><a href="./index.html">
+        <span class="mif-home mif-lg fg-teal"></span>
+        Home
+      </a></li>
+    <li class="divider"></li>
+    <li><a href="./creators.html">
+        <span class="mif-users mif-lg fg-pink"></span>
+        Creators
+      </a></li>
+  </ul>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="login-form">
+        <div class="login-form_logo">
+          <!-- <img class="login-form_logo" src="/assets/login-anime.gif  " alt="logo"> -->
+        </div>
+        <h3>Login To Your Account</h3>
+        <hr>
+
+        <div class="container">
+
+          <div class="box">
+            <span></span>
+            <div class="content">
+              <label for="lUsername" class="form-label">Username</label>
+              <input type="text" class="form-control" id="lUsername">
+              <label for="lPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="lPassword">
+              <a id="login" href="./login.html">Login</a>
+              <br>
+              <br>
+
+
+              <h4>Dont have an account?</h4>
+              <a id="register" href="./register.html">Register</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+
+</html>

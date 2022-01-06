@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="reset.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+  <link href="metro-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/profile.css">
+
+  <title>Profile</title>
+</head>
+<style>
+  
+</style>
+<body>
+ 
+  <!-- nav bar -->
+  <ul class="h-menu bg-black fg-white">
+    <li><a href="./index.html">
+        <span class="mif-home mif-lg fg-teal"></span>
+        Home
+      </a></li>
+    <li class="divider"></li>
+    <li><a href="./creators.html">
+        <span class="mif-users mif-lg fg-pink"></span>
+        Creators
+      </a></li>
+    <li>
+      <a href="#" class="dropdown-toggle bg-black fg-white">
+        <span id="username" class="mif-user mif-lg fg-amber"></span>
+        <span class="mif-arrow-drop-down fg-amber"></span></a>
+      <ul class="d-menu bg-black fg-white" data-role="dropdown">
+        <li><a href="./profile.html">
+            <span class="mif-profile mif-lg fg-violet"></span>
+            Profile</a></li>
+        <li><a href="./login.html">
+            <span class="mif-user-check mif-lg fg-lime"></span>
+            Sign In</a></li>
+        <li><a href="./register.html">
+            <span class="mif-user-plus mif-lg fg-yellow"></span>
+            Create Account</a></li>
+        <li>
+          <a id="logout" class="mif-cross mif-lg fg-red" href="#">Log Out</a>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+<!-- <h1>Profile</h1>
+
+
+</div>
+<div id="posts" class="row"></div>
+</div> -->
+
+<div id="title">
+  <div class="neonText">Profile</div>
+</div>
+<div id="mainPage" class="container">
+  <h2>Your Saved Animes:</h2>
+  <div>
+    <div id="posts" class="row"></div>
+  </div>
+
+
+  <div id="bottomButton">
+    <button type="button" onclick="window.location.href='index.html'" class="button info outline large rounded ">
+      <span class="mif-search mif-lg fg-aqua"></span>
+      Grow your list!
+    </button>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/profile.js"></script>
+
+</body>
+</html>

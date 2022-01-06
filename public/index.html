@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="reset.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+  <link href="metro-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+  <title>Anime</title>
+ 
+</head>
+
+<body>
+
+<!-- nav bar -->
+<ul class="h-menu bg-black fg-white">
+  <li><a href="./index.html">
+      <span class="mif-home mif-lg fg-teal "></span>
+      Home
+    </a></li>
+  <li class="divider"></li>
+  <li><a href="./creators.html">
+      <span class="mif-users mif-lg fg-pink"></span>
+      Creators
+    </a></li>
+  <li>
+    <a href="#" class="dropdown-toggle bg-black fg-white">
+      <span id="username" class="mif-user mif-lg fg-amber"></span>
+      <span class="mif-arrow-drop-down fg-amber"></span></a>
+    <ul class="d-menu bg-black fg-white" data-role="dropdown">
+      <li><a href="./profile.html">
+          <span class="mif-profile mif-lg fg-violet"></span>
+          Profile</a></li>
+      <li><a href="./login.html">
+          <span class="mif-user-check mif-lg fg-lime"></span>
+          Sign In</a></li>
+      <li><a href="./register.html">
+          <span class="mif-user-plus mif-lg fg-yellow"></span>
+          Create Account</a></li>
+      <li>
+          <a id="logout" class="mif-cross mif-lg fg-red" href="#">Log Out</a>
+        </a></li>
+    </ul>
+  </li>
+</ul>
+
+
+  <!-- <div class="navview-content"> -->
+  <div data-role="carousel" data-height="300px" data-auto-start="true" data-cls-controls="fg-white"
+    data-control-next="<span class='mif-chevron-right'></span>"
+    data-control-prev="<span class='mif-chevron-left'></span>">
+  
+    <div class="slide" data-cover="/assets/yuji.jpg"></div>
+  
+    <div class="slide" data-cover="/assets/demonSlayer.jpg"></div>
+    <div class="slide" data-cover="/assets/onePiece.jpg"></div>
+  </div>
+
+
+<h1 class="neon"><sup>4</sup>Anime<sub>Archive</sub></h1>
+  <h2 class="center-align quote">
+    "The future belongs to those who believe in the beauty of their dreams."<br>
+    - Shoyo Hinata.
+  </h2>
+
+
+
+  
+  <div class="container yellow">
+    <h3 class="center-align title">Anime Search</h3>
+    <div class="row">
+      <div class="col l12 class center-align">
+        <!-- <a href="/saved">Saved </a> -->
+        <form>
+          <p>
+          <div class="searchBar">
+            <input class="center-align" type="text" name="search" id="searchInfo" placeholder="Search for shows, movies, etc...">
+          </div>
+  
+          </p>
+          <button class="button success outline" id="search">Search</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="row" id="results"></div>
+    <div class="row" id="more"></div>
+  
+  </div>
+
+  <!-- TRENDING/POPULAR/ETC -->
+  <div class="container yellow">
+    <div class="row">
+
+      <main>
+        <section>
+          <div class="container grid">
+            <h3 class="mt-4">Trending</h3>
+            <hr>
+            <div class="row" id="TRENDING_DESC">
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container grid">
+            <h3 class="mt-4">Popular</h3>
+            <hr>
+            <div class="row" id="POPULARITY_DESC">
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container grid">
+            <h3 class="mt-4">Highest Rated</h3>
+            <hr>
+            <div class="row" id="SCORE_DESC">
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container grid">
+            <h3 class="mt-4">Most Favorited</h3>
+            <hr>
+            <div class="row" id="FAVOURITES_DESC">
+            </div>
+          </div>
+        </section>
+      </main>
+      
+    </div>
+    </div>
+    
+  <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/index.js"></script>
+ 
+</body>
+
+</html>

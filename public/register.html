@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="reset.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+  <link href="metro-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <title>Register</title>
+</head>
+
+<body>
+  <div class="background2"></div>
+
+  <ul class="h-menu bg-black fg-white">
+    <li><a href="./index.html">
+        <span class="mif-home mif-lg fg-teal"></span>
+        Home
+      </a></li>
+    <li class="divider"></li>
+    <li><a href="./creators.html">
+        <span class="mif-users mif-lg fg-pink"></span>
+        Creators
+      </a></li>
+    <li>
+      <a href="#" class="dropdown-toggle bg-black fg-white">
+        <span class="mif-user mif-lg fg-amber"></span>
+        Username<span class="mif-arrow-drop-down fg-amber"></span></a>
+      <ul class="d-menu bg-black fg-white" data-role="dropdown">
+        <li><a href="./profile.html">
+            <span class="mif-profile mif-lg fg-violet"></span>
+            Profile</a></li>
+        <li><a href="./login.html">
+            <span class="mif-user-check mif-lg fg-lime"></span>
+            Sign In</a></li>
+        <li><a href="./register.html">
+            <span class="mif-user-plus mif-lg fg-yellow"></span>
+            Create Account</a></li>
+        <li><a href="./index.html">
+            <span class="mif-cross mif-lg fg-red"></span>
+            Sign Out
+          </a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="container">
+    <div class="row">
+      <div class="register-form">
+        <!-- <div class="register-form_logo">
+          <img class="register-form_logo" src="/assets/register-anime.gif" alt="logo">
+        </div> -->
+        <h3>Register New Account</h3>
+        <hr>
+
+        <div class="container">
+          <div class="box">
+            <span></span>
+
+            <div class="content">
+                <form>
+                <label for="rFistname" class="form-label">First name</label>
+                <input type="text" class="form-control" id="rFirstname">
+                <label for="rLastname" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="rLastname">
+                <label for="rUsername" class="form-label">Username</label>
+                <input type="text" class="form-control" id="rUsername">
+                <label for="rEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="rEmail">
+                
+                <label for="rPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="rPassword">
+                
+                <div class="d-flex flex-justify-between">
+                  <a id="register" href="./register.html">Register</a>
+                  <a id="login" href="./login.html">Login</a>
+                </div>
+              </form>
+              </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/register.js"></script>
+  
+</body>
+
+</html>

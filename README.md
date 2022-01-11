@@ -10,6 +10,7 @@
   ## Description
 
   App used to create an account, search for your favorite animes and save them to your profile.
+  Check it out here: https://anotheranimearchive.herokuapp.com/profile.html
 
   ## Installation
 
